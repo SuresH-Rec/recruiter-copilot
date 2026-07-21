@@ -1,0 +1,202 @@
+name = "Suresh Korumilli"
+title = "Senior Talent Acquisition Professional | 7+ Years in Tech Hiring"
+
+contact = {
+    "Phone": "8000000008",
+    "Email": "sureshvenkataramana7@gmail.com",
+    "LinkedIn": "linkedin.com/in/sureshvenkataramana",
+    "GitHub": "github.com/SuresH-Rec",
+    "Location": "Bengaluru",
+}
+
+summary = (
+    "Results-driven Senior TA Professional with 7+ years of full-cycle "
+    "tech recruitment experience across GCC, product companies, MNCs, "
+    "and startups. Deep expertise in niche hiring for AI/ML, RPA, GenAI, "
+    "Cloud, Data, and Full-Stack roles. Skilled in stakeholder management, "
+    "Boolean sourcing, vendor coordination, and data-driven recruiting "
+    "using Power BI dashboards. Track record of 90%+ offer acceptance, "
+    "25-30% reduction in time-to-fill, and building scalable talent "
+    "pipelines. Currently upskilling in AI-assisted recruitment and "
+    "automation, building practical tools to enhance sourcing, "
+    "screening, and reporting workflows."
+)
+
+experience = [
+    {
+        "role": "Talent Acquisition Specialist",
+        "duration": "Sep 2025 – Present",
+        "company": "Acronotics Pvt Ltd — AI-Focused Services & Product Startup | Bengaluru",
+        "highlights": [
+            "Owned end-to-end TA for an AI-focused startup across RPA, Automation, AI/ML, Data, Cloud, and low-code domains.",
+            "Achieved 80% fulfillment of hiring requirements by aligning strategy with leadership and enterprise clients.",
+            "Built and maintained 500+ candidate talent pools, reducing time-to-hire by 30%.",
+            "Boosted candidate engagement by 40% and offer acceptance to 90% via employer branding.",
+            "Supported hiring across 10 enterprise clients.",
+        ],
+    },
+    {
+        "role": "Senior Recruiter",
+        "duration": "Nov 2023 – May 2024",
+        "company": "ITC Infotech | Bengaluru",
+        "highlights": [
+            "Delivered 100% on-time closures within SLA-aligned timelines for UK and global tech clients.",
+            "Managed 7+ vendors and 3 sourcing channels; cut time-to-fill by 25% for niche tech roles.",
+            "Increased offer acceptance by 20% and boosted direct hires by 60%.",
+        ],
+    },
+    {
+        "role": "HR Executive",
+        "duration": "May 2022 – Sep 2023",
+        "company": "DanskeIT (Alchemy Techsol Pvt Ltd) | Bengaluru",
+        "highlights": [
+            "Closed 40+ positions with a 95% offer-to-join ratio.",
+            "Partnered with 15+ hiring managers; scaled capacity by 50% through vendor partnerships.",
+            "Increased qualified submissions by 35% and reduced candidate drop-offs by 20%.",
+        ],
+    },
+    {
+        "role": "Senior Recruitment Executive",
+        "duration": "Sep 2019 – Apr 2022",
+        "company": "Han Digital Solutions | Bengaluru",
+        "highlights": [
+            "Managed 50+ recruitment mandates simultaneously across multiple clients.",
+            "Mentored 3 junior recruiters and collaborated with 10+ clients on hiring strategy.",
+        ],
+    },
+    {
+        "role": "Associate Recruitment Executive",
+        "duration": "Feb 2018 – Aug 2019",
+        "company": "Aimplus Staffing Solution | Bengaluru",
+        "highlights": [
+            "Sourced and screened 100+ junior to mid-level candidates across tech domains.",
+            "Improved recruiter response rate by 40% through structured follow-ups.",
+        ],
+    },
+]
+
+core_skills = {
+    "Sourcing & Search": "Full-cycle recruitment, Boolean search, LinkedIn Recruiter, Naukri, AI-assisted sourcing, passive candidate engagement, niche & leadership hiring",
+    "Tech Domains": "AI/ML, RPA, GenAI, Cloud (AWS/Azure/GCP), Full-Stack, Data Science, DevOps, Cybersecurity, Low-code, SAP, Oracle",
+    "Tools & Platforms": "ATS (Taleo, Workday, SuccessFactors, Oracle Cloud, PeopleSoft), Power BI, Excel, Microsoft 365, Google Suite, CRM platforms",
+    "Stakeholder Mgmt": "Hiring manager collaboration, SLA management, client relationship management, vendor coordination, escalation handling",
+    "Emerging & Tech": "Recruiter Copilot (AI workflow), Python scripting, Power Automate, prompt engineering, recruitment automation, dashboard design",
+}
+
+certifications = [
+    "Analyzing & Visualizing Data with Power BI — Edu4Sure",
+    "Google Project Management — Coursera",
+    "HR Analyst Professional — VSKILLS",
+    "Diploma in Human Resource Management — Alison",
+    "GEM Award — Excellence in Recruiting Outcomes, DanskeIT, 2022–2023",
+]
+
+education = {
+    "degree": "Bachelor of Technology (B.Tech)",
+    "duration": "2010 – 2014",
+    "institution": "A.K.R.G College of Engineering and Technology, West Godavari, AP",
+}
+
+
+# ---------------------------------------------------------
+# FUNCTIONS
+# ---------------------------------------------------------
+
+def display_header():
+    print("=" * 70)
+    print(name.upper())
+    print(title)
+    print("=" * 70)
+    for key in contact:
+        print(key + ": " + contact[key])
+    print("-" * 70)
+
+
+def display_summary():
+    print("\nPROFESSIONAL SUMMARY")
+    print("-" * 70)
+    print(summary)
+
+
+def display_experience():
+    print("\nPROFESSIONAL EXPERIENCE")
+    print("-" * 70)
+    for job in experience:
+        print("\n" + job["role"] + " | " + job["duration"])
+        print(job["company"])
+        for point in job["highlights"]:
+            print("  - " + point)
+
+
+def display_core_skills():
+    print("\nCORE SKILLS")
+    print("-" * 70)
+    for category in core_skills:
+        print(category + ": " + core_skills[category])
+
+
+def display_certifications():
+    print("\nCERTIFICATIONS & AWARDS")
+    print("-" * 70)
+    for cert in certifications:
+        print("  - " + cert)
+
+
+def display_education():
+    print("\nEDUCATION")
+    print("-" * 70)
+    print(education["degree"] + " (" + education["duration"] + ")")
+    print(education["institution"])
+
+
+def display_full_profile():
+    display_header()
+    display_summary()
+    display_experience()
+    display_core_skills()
+    display_certifications()
+    display_education()
+    print("\n" + "=" * 70)
+
+
+def show_menu():
+    print("\nPROFILE MENU")
+    print("  1. View Full Profile")
+    print("  2. View Summary")
+    print("  3. View Experience")
+    print("  4. View Core Skills")
+    print("  5. View Certifications")
+    print("  6. View Education")
+    print("  0. Exit")
+
+
+def main():
+    running = True
+    while running:
+        show_menu()
+        choice = input("\nSelect an option: ").strip()
+
+        if choice == "1":
+            display_full_profile()
+        elif choice == "2":
+            display_summary()
+        elif choice == "3":
+            display_experience()
+        elif choice == "4":
+            display_core_skills()
+        elif choice == "5":
+            display_certifications()
+        elif choice == "6":
+            display_education()
+        elif choice == "0":
+            print("Goodbye!")
+            running = False
+        else:
+            print("Invalid choice. Please try again.")
+
+
+# ---------------------------------------------------------
+# PROGRAM ENTRY POINT
+# ---------------------------------------------------------
+
+main()
